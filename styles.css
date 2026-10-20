@@ -112,7 +112,7 @@ h1 {
 .hero-text { max-width: 34rem; font-size: 1.2rem; color: var(--muted); margin: 0 0 2rem; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 1rem; }
 
-.hero-art { position: relative; padding: 1rem 0 3.5rem; }
+.hero-art { position: relative; padding: 1rem 0; }
 .id-card {
   background: var(--ink); color: var(--paper); border-radius: 14px;
   border: 2px solid var(--ink); box-shadow: 10px 10px 0 var(--green);
@@ -127,8 +127,6 @@ h1 {
 .id-card pre { margin: 0; padding: 1.2rem 1.4rem 1.5rem; font-family: var(--font-mono); font-size: .95rem; line-height: 1.8; overflow-x: auto; }
 .k { color: #c8a2ff; } .s { color: var(--lime); } .n { color: var(--sun); } .c { color: #7d8f82; }
 
-.scribble { position: absolute; right: .5rem; bottom: .2rem; margin: 0; text-align: right; font-family: var(--font-hand); font-size: 1.55rem; line-height: 1.05; color: var(--green-deep); transform: rotate(-3deg); }
-.scribble-arrow { position: absolute; right: 11rem; bottom: 1.6rem; width: 3.2rem; fill: none; stroke: var(--green-deep); stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; transform: scaleX(-1) rotate(-30deg); }
 .sticker {
   position: absolute; top: -.2rem; left: -.6rem; background: var(--sun); border: 2px solid var(--ink);
   border-radius: 50%; width: 4rem; height: 4rem; display: grid; place-items: center;
@@ -241,7 +239,6 @@ h3 { font-size: clamp(2.2rem, 5vw, 3.2rem); line-height: 1; letter-spacing: -.03
   .hero { gap: 2rem; }
   .featured-art { border-right: 0; border-bottom: 2px solid var(--ink); padding: 2.5rem 2rem; }
   .slots { grid-template-columns: 1fr; gap: 1.5rem; }
-  .scribble-arrow { display: none; }
 
   .menu-toggle { display: block; }
   .nav-links {
