@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio de Alfonso del Pino García, desarrollador web en Madrid. Aquí voy dejando lo que programo."
+    />
+    <meta name="theme-color" content="#f3efe2" />
+    <title>Alfonso del Pino — Portfolio</title>
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Caveat:wght@600;700&family=DM+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="site-header">
+      <nav class="nav wrap" aria-label="Navegación principal">
+        <a class="brand" href="#inicio" aria-label="Alfonso del Pino, inicio">
+          <span class="brand-mark" aria-hidden="true">ad</span>
+          <span class="brand-name">alfonso<span>.dev</span></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir menú">
+          <span></span><span></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="#proyectos">Proyectos</a>
+          <a href="#sobre-mi">Sobre mí</a>
+          <a class="nav-contact" href="#contacto">Escríbeme</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="contenido">
+      <section class="hero wrap" id="inicio">
+        <div class="hero-copy">
+          <p class="hello">¡Buenas! 👋</p>
+          <h1>
+            Soy Alfonso,
+            <span class="underlined">programo<svg viewBox="0 0 300 18" preserveAspectRatio="none" aria-hidden="true"><path d="M3 11 C 40 2, 70 16, 110 8 S 190 3, 220 10 S 280 14, 297 6" /></svg></span>
+            webs desde Madrid.
+          </h1>
+          <p class="hero-text">
+            Este es mi rincón para ir dejando lo que construyo. Por ahora hay un proyecto,
+            pero la lista irá creciendo.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-solid" href="#proyectos">Ver lo que he hecho ↓</a>
+            <a class="btn btn-line" href="#contacto">Hablemos</a>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-hidden="true">
+          <div class="id-card">
+            <div class="id-top"><span></span><span></span><span></span><small>alfonso.js</small></div>
+<pre><code><span class="k">const</span> alfonso = {
+  ciudad: <span class="s">"Madrid"</span>,
+  stack: [<span class="s">"HTML"</span>, <span class="s">"CSS"</span>, <span class="s">"JS"</span>],
+  proyectos: <span class="n">1</span>,
+  <span class="c">// y contando…</span>
+  cafe: <span class="k">true</span>,
+};</code></pre>
+          </div>
+          <p class="scribble">sí, esta web<br />también la he hecho yo</p>
+          <svg class="scribble-arrow" viewBox="0 0 80 70" aria-hidden="true"><path d="M70 6 C 40 4, 12 20, 10 58 M10 58 L 4 44 M10 58 L 24 50" /></svg>
+          <span class="sticker">v1.0</span>
+        </div>
+      </section>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Firebase</span><span>Git</span><span>GitHub Pages</span><span>PokeAPI</span><span>Service Workers</span>
+          <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Firebase</span><span>Git</span><span>GitHub Pages</span><span>PokeAPI</span><span>Service Workers</span>
+        </div>
+      </div>
+
+      <section class="projects wrap" id="proyectos">
+        <div class="section-head">
+          <h2><span class="num">01</span> Proyectos</h2>
+          <p class="note">el primero de una lista larga ↘</p>
+        </div>
+
+        <article class="featured">
+          <div class="featured-art">
+            <img src="img/lockedex.png" alt="" width="256" height="256" />
+            <span class="tape tape-a"></span>
+            <span class="tape tape-b"></span>
+          </div>
+          <div class="featured-body">
+            <p class="kicker">Web de fans · Proyecto personal</p>
+            <h3>LockeDex</h3>
+            <p>
+              Una web para jugar <strong>Nuzlockes con amigos</strong>: montas tu equipo, llevas las rutas,
+              controlas los level caps y miras la Pokédex, todo en el mismo sitio. Tiene perfiles,
+              amigos y un marcador de lockes que se guardan en la nube.
+            </p>
+            <ul class="chips" aria-label="Qué incluye">
+              <li>Equipos</li><li>Rutas</li><li>Level caps</li><li>Pokédex</li><li>Randomizer</li><li>Ruleta</li><li>Versus</li><li>Logros</li>
+            </ul>
+            <ul class="stack" aria-label="Tecnologías utilizadas">
+              <li>JavaScript</li><li>CSS</li><li>Firebase</li><li>PokeAPI</li><li>PWA</li>
+            </ul>
+            <div class="featured-actions">
+              <a class="btn btn-solid" href="https://alfiedpg.github.io/LockeDex/" target="_blank" rel="noreferrer">Abrir la web ↗</a>
+              <a class="btn btn-line" href="https://github.com/AlfieDPG/LockeDex" target="_blank" rel="noreferrer">Ver el código</a>
+            </div>
+          </div>
+        </article>
+
+        <div class="slots">
+          <div class="slot">
+            <span class="slot-n">02</span>
+            <p>Hueco para el próximo proyecto</p>
+            <small>en la libreta de ideas…</small>
+          </div>
+          <div class="slot slot-b">
+            <span class="slot-n">03</span>
+            <p>Y para el siguiente</p>
+            <small>todo llegará</small>
+          </div>
+        </div>
+      </section>
+
+      <section class="about wrap" id="sobre-mi">
+        <div class="section-head">
+          <h2><span class="num">02</span> Sobre mí</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              Me llamo <strong>Alfonso del Pino García</strong> y vivo en <strong>Madrid</strong>.
+              Aprendo programando cosas que me apetece usar: <em>LockeDex</em> nació de querer
+              jugar Nuzlockes con mis amigos con algo mejor que una hoja de cálculo.
+            </p>
+            <p>
+              Me gusta que el código se entienda y que lo que sale por pantalla sea cómodo de usar.
+              Estoy empezando, así que cada proyecto nuevo es una excusa para aprender algo más.
+            </p>
+          </div>
+          <div class="skills">
+            <h3>Lo que uso</h3>
+            <ul>
+              <li>HTML y CSS</li>
+              <li>JavaScript</li>
+              <li>Firebase (Auth y Firestore)</li>
+              <li>APIs como PokeAPI</li>
+              <li>Service workers y PWA</li>
+              <li>Git y GitHub</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact wrap" id="contacto">
+        <div class="contact-card">
+          <h2>¿Hablamos?</h2>
+          <p>Si quieres comentarme algo, proponerme un proyecto o simplemente decir hola, aquí me tienes.</p>
+          <a class="mail" href="mailto:alfdelgar@gmail.com">alfdelgar@gmail.com</a>
+          <div class="social">
+            <a href="https://github.com/AlfieDPG" target="_blank" rel="noreferrer">GitHub ↗</a>
+            <a href="https://www.linkedin.com/in/alfonsodpg/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-in">
+        <p>Hecho a mano por Alfonso del Pino · <span id="year">2026</span></p>
+        <a href="#inicio">Volver arriba ↑</a>
+      </div>
+    </footer>
+  </body>
+</html>
